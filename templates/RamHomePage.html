@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+		integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<title>Ram Tahmin Uygulaması</title>
+</head>
+<style>
+	body {
+    background: url(../static/wallpaper-2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+</style>
+<body>
+	<div class="container mt-5">
+		<form action="" method="POST">
+			<div class="form-group">
+				<label class="text-white">Ram Markası :</label>
+				<select class="form-control" name="Marka">
+					<option value="1">Ramtech</option>
+					<option value="2">OCZ</option>
+					<option value="3">SKHynix</option>
+					<option value="4">G.Skill</option>
+					<option value="5">Kingston</option>
+					<option value="6">Corsair</option>
+					<option value="7">Adata</option>
+					<option value="12">Hi-Level</option>
+					<option value="11">Elixir</option>
+					<option value="9">Crucial</option>
+					<option value="45">Diğer</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label class="text-white">Ram Kapasitesi :</label>
+				<select class="form-control" name="Kapasite">
+					<option value="1">1 GB</option>
+					<option value="2">2 GB</option>
+					<option value="4">4 GB</option>
+					<option value="6">6 GB</option>
+					<option value="8">8 GB</option>
+					<option value="12">12 GB</option>
+					<option value="16">16 GB</option>
+					<option value="24">24 GB</option>
+					<option value="32">32 GB</option>
+					<option value="36">36 GB</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="exampleFormControlSelect1" class="text-white">Ram Kategorisi :</label>
+				<select class="form-control" name="Kategori">
+					<option value="5">SDRAM</option>
+					<option value="4">DDR</option>
+					<option value="6">RDRAM</option>
+					<option value="2">DRR2</option>
+					<option value="3">DDR3</option>
+					<option value="1">DDR4</option>
+				</select>
+			</div>
+			<div class="form-group text-center">
+				<button type="submit" class="btn btn-light">Hesapla</button>
+			</div>
+		</form>
+		{% if data != None %}
+		<center>
+			<h1 class="text-white">{{data}} Türk Lirası</h1>
+		</center>
+		{% endif %}
+	</div>
+	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+	</script>
+
+	<!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
